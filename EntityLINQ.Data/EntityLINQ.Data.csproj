@@ -75,9 +75,9 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="EntityLINQContext.cs" />
-    <Compile Include="Migrations\201404082147128_addednewcontent.cs" />
-    <Compile Include="Migrations\201404082147128_addednewcontent.Designer.cs">
-      <DependentUpon>201404082147128_addednewcontent.cs</DependentUpon>
+    <Compile Include="Migrations\201404082250351_addedcustomerandorder.cs" />
+    <Compile Include="Migrations\201404082250351_addedcustomerandorder.Designer.cs">
+      <DependentUpon>201404082250351_addedcustomerandorder.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,8 +93,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201404082147128_addednewcontent.resx">
-      <DependentUpon>201404082147128_addednewcontent.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201404082250351_addedcustomerandorder.resx">
+      <DependentUpon>201404082250351_addedcustomerandorder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

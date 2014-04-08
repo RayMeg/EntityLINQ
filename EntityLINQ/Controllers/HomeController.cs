@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EntityLINQ.Models;
+using EntityLINQ.Data;
 
 namespace EntityLINQ.Controllers
 {
@@ -10,21 +12,11 @@ namespace EntityLINQ.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            IndexVM bucket = new IndexVM();
+            ApplicationDbContext db = new ApplicationDbContext();
+            bucket.Customers1 = db.Customers.ToList();
+            return View(bucket);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

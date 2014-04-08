@@ -7,13 +7,13 @@ namespace EntityLINQ.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-alpha1-21218")]
-    public sealed partial class addednewcontent : IMigrationMetadata
+    public sealed partial class addedcustomerandorder : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addednewcontent));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addedcustomerandorder));
         
         string IMigrationMetadata.Id
         {
-            get { return "201404082147128_addednewcontent"; }
+            get { return "201404082250351_addedcustomerandorder"; }
         }
         
         string IMigrationMetadata.Source
