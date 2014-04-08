@@ -75,6 +75,11 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="EntityLINQContext.cs" />
+    <Compile Include="Migrations\201404082147128_addednewcontent.cs" />
+    <Compile Include="Migrations\201404082147128_addednewcontent.Designer.cs">
+      <DependentUpon>201404082147128_addednewcontent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +91,11 @@
       <Project>{f9113d3e-8552-484a-8155-f24eda8a4d58}</Project>
       <Name>EntityLINQ.DataModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201404082147128_addednewcontent.resx">
+      <DependentUpon>201404082147128_addednewcontent.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
